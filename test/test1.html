@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  The brains of the document                        -->
+<!--  Don't worry about most of it                      -->
+<!--  We'll usually just change the title and link tags -->
+<head>
+	<title>Intro to CSS</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="My Page">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Import CSS -->
+	<link rel="stylesheet" type="text/css" href="test.css">
+
+</head>
+
+<body>
+<!-- The page content goes here!-->
+
+
+<h1> Hello! </h1>
+
+
+
+
+</body>
+
+
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+
+
+<div class="popup" onclick="myFunction()">Click me!
+  <span class="popuptext" id="myPopup">Popup text...</span>
+</div>
+
+<div class="popup2" onclick="myFunction()">Click me!
+  <span class="popuptext" id="myPopup">Popup text...</span>
+</div>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  The brains of the document                        -->
+<!--  Don't worry about most of it                      -->
+<!--  We'll usually just change the title and link tags -->
+<head>
+	<title>Intro to CSS</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="My Page">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assign3.css">
+	<script type=”text/javascript” src=”jquery.js”></script>
+
+	
+
+
+</head>
+
+<body>
+
+<script type=”text/javascript” src=”test5.js”></script>
+
+	
+	<div class="topnav">
+		<a class="active" href="#home">Available teachers</a>
+		<a href="#news">These are teachers that are now on campus</a>
+	</div>
+
+
+	<div class="john">
+		<img onclick="myFunction(this)" src="john.png" height="50px">
+		<div class="showContent" style="display:none;">
+		
+
+			<ul>Who: MR JOHN </ul>
+			<ul>Subject:  CHEMISTRY </ul>
+			<ul>Status: AVAILABLE </ul>
+		</div>
+	</div>
+
+
+
+
+	
+
+	<div class="jim">
+		<img onclick="myFunction(this)" src="jim.png" height="50px">
+		<div class="showContent" style="display:none;">
+			
+			<ul> Who: MR JIM </ul>
+			<ul>Subject: MATH </ul>
+			<ul> Status: AVAILABLE </ul>
+		
+		</div>
+	</div>
+
+
+
+<div class="jay">
+		<img onclick="myFunction(this)" src="jay.png" height="50px">
+		<div class="showContent" style="display:none;">
+			<ul> Who: MR JAY </ul>
+			<ul>Subject: P.E </ul>
+			<ul> Status: BUSY </ul>
+		</div>
+	</div>
+
+
+
+
+<div class="jack">
+		<img onclick="myFunction(this)" src="jack3.png" height="50px">
+		<div class="showContent" style="display:none;">
+			<ul> Who: MR JACK </ul>
+			<ul>Subject: PHYSICS </ul>
+			<ul> Status: BUSY </ul>
+		</div>
+	</div>
+
+
+
+
+
+<script>
+		function myFunction(obj) {
+			var showContent = obj.parentNode.getElementsByTagName("div")[0];
+			if (showContent.style.display == "none")
+				showContent.style.display = "";
+			else
+				showContent.style.display = "none";
+		}
+	</script>
+
+
+<div class="available">
+	 Your teachers</div>
+
+
+<div class="teacher">
+	
+<button class="teacher" data-id="0"> Mr John</button>
+<button class="teacher" data-id="1"> Mrs Katie</button>
+<button class="teacher" data-id="2"> Mrs Rose</button>
+<button class="teacher" data-id="3"> Mrs Bella</button>
+
+</div>
+
+<div>
+	<p class="availability">Teacher's availability</p>
+
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
