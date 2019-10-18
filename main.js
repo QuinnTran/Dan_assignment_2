@@ -10,14 +10,14 @@ function myFunction(obj) {
 $('.button').hover(
     //mouse enter
     function () {
-        $('.popup').css('opacity', '1');
+        // $('.popup').css('opacity', '1');
         $id = $(this).attr('data-id');
 
         //A variable for an individial movie 
         //[] = a list of sth
         $teacherId = data[$id];
         // using '.' is only get name out of movie
-        $teacher = $teacherId.$teacher;
+        $teacher = $teacherId.teacher;
         $availability = $teacherId.availability;
 
         $('.teacher').text($teacher)
@@ -25,13 +25,13 @@ $('.button').hover(
     },
     //mouse exits
     function () {
-
         $('.teacher').text('');
         $('.availability').text('');
-        $('.popup').css('opacity', '0');
-    });
+        // $('.popup').css('opacity', '0');
+    }
+);
 
-// when i click on the button, change the text inside the popup to the movie 
+// // when i click on the button, change the text inside the popup to the movie 
 $('.button').click(function () {
     // 
 });
