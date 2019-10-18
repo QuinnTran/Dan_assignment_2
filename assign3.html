@@ -10,28 +10,16 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="My Page">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" type="text/css" href="assign3.css">
+	<!-- Link YOUR JS file e.g. main.js -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type=”text/javascript” src=”jquery.js”></script>
-	<script>
-		function loadData() {
-			var teacher = [];
-
-			document.getJSON('data.json', function (data) {
-				array.forEach(element => {
-					data.teacher, function (i, f) {
-
-					}
-				});
-			});
-		});
-	</script>
+	<script src="data.js"></script>
+	<script src="main.js"></script>
 </head>
 
 <body>
-
-	<!-- <script type=”text/javascript” src=”test5.js”></script> -->
-
-
 	<div class="topnav">
 		<a class="active" href="#home">Available teachers</a>
 		<a href="#news">These are teachers that are now on campus</a>
@@ -41,8 +29,6 @@
 	<div class="john">
 		<img onclick="myFunction(this)" src="john.png" height="50px">
 		<div class="showContent" style="display:none;">
-
-
 			<ul>Who: MR JOHN </ul>
 			<ul>Subject: CHEMISTRY </ul>
 			<ul>Status: AVAILABLE </ul>
@@ -52,11 +38,9 @@
 	<div class="jim">
 		<img onclick="myFunction(this)" src="jim.png" height="50px">
 		<div class="showContent" style="display:none;">
-
 			<ul> Who: MR JIM </ul>
 			<ul>Subject: MATH </ul>
 			<ul> Status: AVAILABLE </ul>
-
 		</div>
 	</div>
 
@@ -78,33 +62,22 @@
 		</div>
 	</div>
 
-	<script>
-		function myFunction(obj) {
-			var showContent = obj.parentNode.getElementsByTagName("div")[0];
-			if (showContent.style.display == "none")
-				showContent.style.display = "";
-			else
-				showContent.style.display = "none";
-		}
-	</script>
-
-
-	<div class="available">
-		Your teachers</div>
-
-
-	<div onclick="load()">
-		<button id="teacher"> Mr John</button>
-		<button id="teacher"> Mrs Katie</button>
-		<button id="teacher"> Mrs Rose</button>
-		<button id="teacher"> Mrs Bella</button>
+	<div class='available'>
+		Your teachers
 	</div>
 
-	<div>
-		<p class="availability">Teacher's availability</p>
-
+	<div class='teacher'>
+		<button class='button' data-id='0'> Mr John</button>
+		<button class='button' data-id='1'> Mrs Katie</button>
+		<button class='button' data-id='2'> Mrs Rose</button>
+		<button class='button' data-id='3'> Mrs Bella</button>
 	</div>
 
 
-
+	<div class='popup'>
+		<h4 class='teacher'>Name</h4>
+		<p class='availability'>Availability</p>
+	</div>
 </body>
+
+</html>
